@@ -1,0 +1,79 @@
+body, html{
+    margin: 0;
+}
+
+
+#nav-space{ /* Estilos del contenedor principal del navbar */
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-bar { /* Estilos del navbar */
+    width: 80%;
+    max-width: 960px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+#nav-bar a { /* Estilos de los enlaces dentro del navbar */
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3%;
+}
+  
+#nav-bar a:hover { /* Estilos cuando se hace hover sobre los enlaces */
+    color: #007AFF;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: #F2F2F2;
+    color: #828282;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 960px;
+    width: 100%;
+}
+  
+.logo {
+    height: 30px;
+    border-radius: 9px;
+}
+  
+footer p {
+    color: #828282;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+footer div div span{
+    color: #828282;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+  
+  
+  
