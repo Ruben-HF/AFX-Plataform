@@ -2,7 +2,7 @@
 Platform created to connect people from different areas of the company, meeting the operational needs for efficient work.
 
 
-##Objectives 
+## Objectives 
 1. Landing Page (Public)
 2. Blog (Public and Internal)
    2.1 Public information and common interest
@@ -22,7 +22,7 @@ Platform created to connect people from different areas of the company, meeting 
    5.1 For Area
    5.2 To Support or Suggestions
    
-##Functionality
+## Functionality
 Managers.- Delimited people with full access to the functionality.
 Internal.- The people specific for area (sales, support, hr, others). 
 Users.- The people in the company include Managers and Internal.
@@ -51,5 +51,5 @@ Viewers.- The people out the company.
 - Viewers can see landing page.
 - Viewers can see public blog.
 
-###Considerations
+### Considerations
 Different states of pages for users logged in and logged out, access for session types.
