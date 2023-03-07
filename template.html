@@ -10,7 +10,7 @@
 </head>
 <body onload="showCurrentYear();">
     
-    <header>
+    <header> <!-- Será llamado por la función loadHeader -->
         <nav id="nav-space"> <!-- Contenedor principal del navbar -->
             <div id="nav-bar">
                 <a href="/index.html">Inicio</a> <!-- Agregamos los enlaces que queremos dentro del navbar -->
@@ -25,16 +25,16 @@
     
     
 
-    <footer>
+    <footer> <!-- Será llamado por la función loadFooter -->
         <div class="container">
-          <div>
+          <div class="leftFooter">
             <img class="logo" src="ruta/a/la/foto.jpg" alt="Logo de la empresa">
           </div>
-          <div>
+          <div class="centerFooter">
             <p> &copy; Rubén Herrera</p>
-            <div class="current-year"></div>
+            <div class="current-year"></div> <!-- Insertará el año actual con la función showCurrentYear -->
           </div>
-          <div>
+          <div class="rightFooter">
             <p>AFIX SOLUTIONS</p>
           </div>
         </div>

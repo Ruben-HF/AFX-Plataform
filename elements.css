@@ -3,6 +3,8 @@ body, html{
 }
 
 
+/* NAVEGACIÓN */
+
 #nav-space{ /* Estilos del contenedor principal del navbar */
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -32,22 +34,23 @@ body, html{
     color: #007AFF;
 }
 
-footer {
+
+/* FOOTER */
+
+footer { /*Estilos del pie de página */
     position: fixed;
     bottom: 0;
     width: 100%;
-    min-height: 60px;
+    min-height: 39px;
     background-color: #F2F2F2;
     color: #828282;
     text-align: center;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
   
-.container {
+.container { /*Estilos del contenedor principal del footer */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -56,24 +59,56 @@ footer {
     width: 100%;
 }
   
-.logo {
-    height: 30px;
+.logo { /*Estilos para el logo del footer*/
+    max-height: 30px;
     border-radius: 9px;
 }
   
-footer p {
+footer p { /*Estilos para los elementos párrafo */
     color: #828282;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
 }
 
-footer div div span{
+footer div div span{ /*Estilos para el elemento span (fecha y derechos reservados)*/
     color: #828282;
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
 }
   
-  
-  
+
+/* ELEMENTOS MODIFICADOS A UNA PANTALLA MENOR A 1080PX */
+
+
+@media (max-width: 1080px) {
+
+    .container { /*Estilos del contenedor principal del footer */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 960px;
+        width: 90%;
+    }
+    
+    .leftFooter{/*Estilos del contenedor izquierdo del footer */
+        width: 25%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .centerFooter{ /*Estilos del contenedor central del footer */
+        width: 50%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .rightFooter{ /*Estilos del contenedor derecho del footer */
+        width: 25%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+}
