@@ -1,26 +1,37 @@
 body, html{
     margin: 0;
+    align-items: center;
 }
+
+
+
+
+
 
 
 /* NAVEGACIÓN */
 
-#nav-space{ /* Estilos del contenedor principal del navbar */
+#nav-space{ /* Estilos del contenedor principal del navbar fijo en la pantalla */
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 #nav-bar { /* Estilos del navbar */
     width: 80%;
-    max-width: 960px;
+    max-width: 1200px;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
   
 #nav-bar a { /* Estilos de los enlaces dentro del navbar */
@@ -33,6 +44,155 @@ body, html{
 #nav-bar a:hover { /* Estilos cuando se hace hover sobre los enlaces */
     color: #007AFF;
 }
+
+
+
+
+
+
+/* MAIN */
+
+main{ /* Estilo del contenido general Layout */
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+/*INICIO INDEX - PÁGINAS EN EL INICIO*/
+
+#landingIndex{ /* Estilos para la sección LandingPage */
+    background-color: blueviolet;
+    height: 80vh;
+    width: 90%;
+    min-width: 360px;
+    max-width: 1200px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+
+#blogIndex{ /* Estilos para la visualización principal del Blog */
+    background-color: whitesmoke;
+    width: 90%;
+    min-width: 360px;
+    max-width: 1200px;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blogPrin{
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    width: 51%;
+    min-height: 100%;
+    min-width: 330px;
+    min-height: 350px;
+    border-radius: 9px;
+}
+
+.tittleBlogs{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.blogsIndex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 39%;
+    height: 100%;
+    margin-bottom: 3vh;
+}
+
+.blog1{
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    width: 100%;
+    min-width: 300px;
+    min-height: 90px;
+    margin-bottom: 1vh;
+    border-radius: 9px;
+}
+
+.blog2{
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    width: 100%;
+    min-width: 300px;
+    min-height: 90px;
+    margin-bottom: 1vh;
+    border-radius: 9px;
+}
+
+.blog3{
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    width: 100%;
+    min-width: 300px;
+    min-height: 90px;
+    margin-bottom: 1vh;
+    border-radius: 9px;
+}
+
+
+
+#contactIndex{
+    background-color: violet;
+    height: 20vh;
+    width: 90%;
+    min-width: 360px;
+    max-width: 1200px;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+
+
+
+#salesIndex{
+    background-color: #ccc;
+    height: 50vh;
+    width: 90%;
+    min-width: 360px;
+    max-width: 1200px;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+
+
+
+#eventsIndex{
+    background-color: #333;
+    height: 30vh;
+    width: 90%;
+    min-width: 360px;
+    max-width: 1200px;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+
+
+
+
 
 
 /* FOOTER */
@@ -55,7 +215,7 @@ footer { /*Estilos del pie de página */
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    max-width: 960px;
+    max-width: 1200px;
     width: 100%;
 }
   
@@ -77,13 +237,71 @@ footer div div span{ /*Estilos para el elemento span (fecha y derechos reservado
     font-weight: bold;
     font-size: 12px;
 }
-  
+
+
+
+
+
 
 /* ELEMENTOS MODIFICADOS A UNA PANTALLA MENOR A 1080PX */
 
+@media (max-width: 1020px) {
 
-@media (max-width: 1080px) {
 
+    /*MAIN*/
+    main{
+        width: 100%;
+        margin-top: 39px;
+        padding-top: 12px;
+        padding-bottom: 39px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #landingIndex{ /*Adecua el tamaño del margin-top*/
+        height: 80vh;
+        width: 80%;
+        max-width: 1200px;
+        margin-top: 3%;
+    }
+
+
+    #blogIndex{ /* Estilos para la visualización principal del Blog */
+        background-color: blue;
+        max-width: 80%;
+        min-width: 360px;
+        margin-top: 1.2vh;
+        margin-bottom: 1.2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .blogPrin{
+        background-color: #fff;
+        box-shadow: 0 0 10px #ccc;
+        width: 96%;
+        min-width: 330px;
+        min-height: 350px;
+        margin-top: 3vh;
+    }
+
+    .blogsIndex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 96%;
+        margin: 0%;
+        margin-bottom: 3vh;
+    }
+
+
+
+    /*FOOTER*/
     .container { /*Estilos del contenedor principal del footer */
         display: flex;
         flex-wrap: wrap;
