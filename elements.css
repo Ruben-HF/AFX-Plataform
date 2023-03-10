@@ -84,7 +84,146 @@ main{ /* Estilo del contenido general Layout */
 
 
 
+
+
 /*BLOG*/
+
+/* Estilos generales para la sección de blogs */
+#blogIndex{
+    min-height: 60vh;
+    width: 90%;
+    min-width: 360px;
+    max-width: 1200px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogPrin{ /* Estilos del blog grande*/
+    width: 51%;
+    min-width: 330px;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blogP-card{ /*Estilos a la tarjeta de blog principal*/
+    background-color: #fff;
+    min-width: 90%;
+    padding: 1%;
+    margin: 3%;
+    height: 96%;
+    border-radius: 9px;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blogP-text{ /*Estilos al texto del blog principal*/
+    width: 96%;
+    margin-bottom: 3%;
+    color: #333;
+}
+
+.blogP-link{ /*Estilo para el link principal*/
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.blogP-link:hover{ /*Estilo para el link principal en hoover*/
+    text-decoration: none;
+    color: #007AFF;
+}
+
+.blogP-description{ /*Estilo de la descripción*/
+    text-align: justify;
+}
+
+.blogP-image{ /*Estilos de la foto principal*/
+    max-width: 96%;
+    height: 21vh;
+    border-radius: 9px;
+    margin-top: 3%;
+}
+
+
+  
+/* Estilos para las tarjetas de blog */
+
+.blogsPrin{ /* Estilos de los blog de interés*/
+    width: 45%;
+    min-width: 330px;
+}
+  
+.scrollBlogs{ /*Estilos particulares de blos scrolling*/
+    overflow-y: scroll; 
+    height: 42vh;
+    min-width: 330px;
+}
+
+.blog-card { /* Estilos de las tarjetas del blog*/
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90vh;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px #ccc;
+    margin-right: 1%;
+}
+  
+.blogs-container { /*Estilos para el contenedor de tarjetas blog*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-image { /*Estilos para la imagen de la tarjeta del blog*/
+    width: 96%;
+    height: 21vh;
+    padding-bottom: 6px;
+    border-radius: 9px;
+}
+  
+.blog-text{ /*Estilos del texto dentro de la tarjeta del blog*/
+    width: 96%;
+    margin-bottom: 3%;
+    color: #333;
+}
+
+.blog-title { /*Estilos del título dentro de la tarjeta del blog*/
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.blog-description { /*Estilos de la descripción dentro de la tarjeta del blog*/
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+  
+.blog-link{ /*Estilo para el link*/
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.blog-link:hover{ /*Estilo para el link en hoover*/
+    text-decoration: none;
+    color: #007AFF;
+}
+  
+
 
 
 
