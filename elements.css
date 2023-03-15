@@ -51,11 +51,9 @@ body, html{
 
 
 /* MAIN */
-
 main{ /* Estilo del contenido general Layout */
     width: 100%;
     height: 100%;
-    padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 60px;
     background-color: whitesmoke;
@@ -71,41 +69,83 @@ main{ /* Estilo del contenido general Layout */
 
 
 /*INICIO INDEX - PÁGINAS EN EL INICIO*/
-
-#landingIndex{ /* Estilos para la sección LandingPage */
-    background-color: blueviolet;
-    height: 80vh;
-    width: 90%;
-    min-width: 360px;
-    max-width: 1200px;
+.landingIndex { /* Estilos para la sección LandingPage */
+    height: 81vh;
+    width: 100%;
     margin-top: 3%;
     margin-bottom: 3%;
+    background-image: url('https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+    
+.landingIndex .container { /*Estilos de contenedor*/
+    text-align: center;
+    width: 500px;
+    color: #fff;
+}
+    
+.landingIndex h1 { /*Estilos de título */
+    font-size: 39px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+    
+.landingIndex p { /*Estilos de párrafo*/
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+    
+.btn { /*Estilos de btn comenzar*/
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 21px;
+    border-radius: 2.1rem;
+    border: none;
+    background-color: #007AFF;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;    
+}
+    
+.btn:hover { /*Estilos de hover bnt comenzar*/
+    background-color: #016de0;
+}
+
+
+
+
+
+
+
+
 
 
 
 
 
 /*BLOG*/
-
 /* Estilos generales para la sección de blogs */
 #blogIndex{
     min-height: 60vh;
     width: 90%;
     min-width: 360px;
     max-width: 1200px;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .blogPrin{ /* Estilos del blog grande*/
     width: 51%;
     min-width: 330px;
-    height: 60vh;
+    height: 57vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -113,9 +153,7 @@ main{ /* Estilo del contenido general Layout */
 
 .blogP-card{ /*Estilos a la tarjeta de blog principal*/
     background-color: #fff;
-    min-width: 90%;
-    padding: 1%;
-    margin: 3%;
+    min-width: 100%;
     height: 96%;
     border-radius: 9px;
     box-shadow: 0 0 10px #ccc;
@@ -125,9 +163,10 @@ main{ /* Estilo del contenido general Layout */
 }
 
 .blogP-text{ /*Estilos al texto del blog principal*/
-    width: 96%;
+    width: 90%;
     margin-bottom: 3%;
     color: #333;
+    text-align: justify;
 }
 
 .blogP-link{ /*Estilo para el link principal*/
@@ -146,24 +185,29 @@ main{ /* Estilo del contenido general Layout */
 }
 
 .blogP-image{ /*Estilos de la foto principal*/
-    max-width: 96%;
-    height: 21vh;
+    max-width: 90%;
+    height: 24vh;
     border-radius: 9px;
     margin-top: 3%;
 }
 
-
-  
 /* Estilos para las tarjetas de blog */
+
+.artInt-tittle{ /*Estilos título Artículos de tu interés*/
+    margin-top: 0%;
+    height: max-content;
+    width: 100%;
+}
 
 .blogsPrin{ /* Estilos de los blog de interés*/
     width: 45%;
     min-width: 330px;
+    margin-bottom: 3%;
 }
   
 .scrollBlogs{ /*Estilos particulares de blos scrolling*/
     overflow-y: scroll; 
-    height: 42vh;
+    height: 54vh;
     min-width: 330px;
 }
 
@@ -177,26 +221,29 @@ main{ /* Estilo del contenido general Layout */
     margin-bottom: 20px;
     border-radius: 9px;
     box-shadow: 0 0 10px #ccc;
-    margin-right: 1%;
+    margin-right: 1vh;
 }
   
 .blogs-container { /*Estilos para el contenedor de tarjetas blog*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
+    max-width: 540px;
     height: 100%;
 }
 
 .blog-image { /*Estilos para la imagen de la tarjeta del blog*/
-    width: 96%;
+    width: 90%;
+    max-width: 390px;
     height: 21vh;
     padding-bottom: 6px;
     border-radius: 9px;
 }
   
 .blog-text{ /*Estilos del texto dentro de la tarjeta del blog*/
-    width: 96%;
+    width: 90%;
+    max-width: 390px;
     margin-bottom: 3%;
     color: #333;
 }
@@ -231,31 +278,195 @@ main{ /* Estilo del contenido general Layout */
 
 
 
-
-#contactIndex{
-    background-color: violet;
-    height: 20vh;
+/*CONTACTO*/
+/* Estilos CSS para la sección de contacto */
+#contactIndex { /*Estilos */
+	background-color: #fff;
     width: 90%;
     min-width: 360px;
     max-width: 1200px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     margin-top: 1.2vh;
     margin-bottom: 1.2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+	border-radius: 9px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.tsContact{ /*Estilos texto izquierdo*/
+    width: 45%;
+    min-width: 330px;
+}
+
+#contactIndex h1 { /*Estilos título*/
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+	font-size: 36px;
+	color: #333;
+}
+
+#contactIndex p { /*Estilos texto*/
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 96%;
+    color: #333;
+    text-align: justify;
+}
+
+.img-contact{ /*Estilos de imagen*/
+    max-width: 100%;
+    min-width: 330px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+/* Estilos CSS para los campos del formulario de contacto */
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+#contactForm label { /*Estilos para los label del formulario*/
+	display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1020px;
+	margin-bottom: 9px;
+	font-size: 18px;
+	color: #333;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea { /*Estilos para los input*/
+    display: flex;
+    flex-wrap: wrap;
+	padding: 9px;
+	border: none;
+	background-color: whitesmoke;
+	box-shadow: inset 0 0 6px #ccc;
+	margin-bottom: 21px;
+	width: 100%;
+    min-width: 330px;
+    max-width: 1020px;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: #333;
+}
+
+#contactForm textarea { /*Estilos para el mensaje*/
+	resize: none;
+}
+
+#contactForm input[type="submit"] { /*Estilos para el botón de enviar*/
+    background-color: #007AFF;
+    color: #fff;
+    border: none;
+    padding: 12px 21px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition:  0.2s;
+    width: 100%;
+    margin-bottom: 0; /* Agregado */
+    align-self: flex-end;
+    font-size: 18px;
+}
+    
+
+#contactForm input[type="submit"]:hover { /*Estilos para el botón de enviar hover*/
+	background-color: #016de0;
 }
 
 
 
+
+
+
+
+
+/* Estilos CSS para la sección de planes de suscripción */
 #salesIndex{
-    background-color: #ccc;
-    height: 50vh;
+    background-color: whitesmoke;
     width: 90%;
     min-width: 360px;
     max-width: 1200px;
     margin-top: 1.2vh;
     margin-bottom: 1.2vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+/* Estilos para planes de suscripción */
+  
+.plans-container {/*Estilos para el contenedor principal*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+  
+.plan { /*Estilos para las tarjetas de suscripción*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0 1vh;
+    height: 33vh;
+    width: 30vh;
+    padding: 3vh;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #ccc;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+ 
+.plan h3 { /*Estilos de título, siempre hasta arriba*/
+    font-size: 24px;
+    margin-top: 0;
+}
+  
+.plan p { /*Estilos de contenido*/
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.plan button { /*Estilos para el botón, siempre hasta abajo*/
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    width: 100%;
+    padding: 12px 21px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: auto;
+}
+  
+.plan button:hover { /*Estilos para el botón hover*/
+    background-color: #0058c0;
 }
 
 
 
+
+
+
+
+
+/*ESTILOS PARA LA SECCIÓN DE EVENTOS*/
 #eventsIndex{ /* Estilos para las tarjetas de eventos*/
     background-color: whitesmoke;
     width: 90%;
@@ -265,18 +476,18 @@ main{ /* Estilo del contenido general Layout */
     margin-bottom: 1.2vh;
 }
 
-.blackTittle{ /* */
+.blackTittle{ /*Estilo principal del título de sección*/
     padding-left: 9px;
     padding-right: 9px;
     color: #333;
     font-size: 39px;
 }
 
-.grayTittle{
+.grayTittle{ /*Estilo secundario del título de sección*/
     color: gray;
 }
 
-.card-container {
+.card-container { /*Estilo para el contenedor con scroll horizontal*/
     display: flex;
     flex-wrap: nowrap; /* Evita que las tarjetas se desborden en varias líneas */
     overflow-x: auto; /* Agrega una barra de desplazamiento horizontal */
@@ -287,8 +498,7 @@ main{ /* Estilo del contenido general Layout */
     margin-bottom: 3%;
 }
   
-  
-.card {
+.card { /*Estilos para las tarjetas de eventos*/
     background-color: #fff;
     box-shadow: 0 0 10px #ccc;
     min-height: 33vh;
@@ -304,7 +514,7 @@ main{ /* Estilo del contenido general Layout */
     margin-bottom: 3%;
 }
   
-.card-text {
+.card-text { /*Estilos para el texto general de las tarjetas*/
     width: 100%;
     height: 12vh;
     display: flex;
@@ -313,29 +523,27 @@ main{ /* Estilo del contenido general Layout */
     align-items: center;
     padding-right: 12px;
     padding-left: 12px;
+    color: #333;
 }
 
-.card-title {
+.card-title { /*Estilos para el título de los eventos*/
     width: 100%;
     font-size: 24px;
     font-weight: bold;
 }
   
-.card-description {
+.card-description { /*Estilos para la descripción de los eventos*/
     width: 100%;
     font-size: 16px;
+    color: #333;
 }
   
-.card-image {
+.card-image { /*Estilos para la imagen de los eventos*/
     width: 96%;
     height: 21vh;
     padding-bottom: 6px;
     border-radius: 9px;
 }
-  
-  
-
-  
 
 
 
@@ -346,14 +554,13 @@ main{ /* Estilo del contenido general Layout */
 
 
 /* FOOTER */
-
 footer { /*Estilos del pie de página */
     position: fixed;
     bottom: 0;
     width: 100%;
     min-height: 39px;
-    background-color: #F2F2F2;
-    color: #828282;
+    background-color: whitesmoke;
+    color: #333;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -375,14 +582,12 @@ footer { /*Estilos del pie de página */
 }
   
 footer p { /*Estilos para los elementos párrafo */
-    color: #828282;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
 }
 
 footer div div span{ /*Estilos para el elemento span (fecha y derechos reservados)*/
-    color: #828282;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
@@ -393,7 +598,10 @@ footer div div span{ /*Estilos para el elemento span (fecha y derechos reservado
 
 
 
-/* ELEMENTOS MODIFICADOS A UNA PANTALLA MENOR A 1080PX */
+
+
+
+/* ELEMENTOS MODIFICADOS A UNA PANTALLA MENOR A 1020PX */
 
 @media (max-width: 1020px) {
 
@@ -401,8 +609,6 @@ footer div div span{ /*Estilos para el elemento span (fecha y derechos reservado
     /*MAIN*/
     main{
         width: 100%;
-        margin-top: 39px;
-        padding-top: 12px;
         padding-bottom: 39px;
         display: flex;
         flex-wrap: wrap;
@@ -412,9 +618,11 @@ footer div div span{ /*Estilos para el elemento span (fecha y derechos reservado
 
     #landingIndex{ /*Adecua el tamaño del margin-top*/
         height: 80vh;
-        margin-top: 3%;
     }
 
+    #blogIndex{ /*Adecua la distribución*/
+        justify-content: space-around;
+    }
 
 
 

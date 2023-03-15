@@ -15,19 +15,30 @@
         <header></header>
 
 
+
         <main>
 
-            <section id="landingIndex"></section>
+            <section class="landingIndex">
+                <div class="container">
+                  <h1>La plataforma que conecta tu empresa</h1>
+                  <p>Descubre cómo nuestras soluciones pueden mejorar tu desempeño</p>
+                  <button class="btn">Comenzar</button>
+                </div>
+            </section>
+
+
 
             <section id="blogIndex">
+
+                <div class="artInt-tittle">
+                    <h1 class="blackTittle" >Artículos <span class="grayTittle"> de tu interés</span></h1>
+                </div>
+
                 <div class="blogPrin">
                     <!-- Blog Principal con javascript -->
                 </div>
 
                 <section class="blogsPrin">
-                    <div>
-                        <h1 class="blackTittle" >Artículos <span class="grayTittle"> de tu interés</span></h1>
-                    </div>
                     <section class="scrollBlogs">
                         <div class="blogs-container">
                           <!-- Tarjetas con javascript -->
@@ -37,9 +48,32 @@
             </section>
               
 
-            <section id="contactIndex">Contacto</section>
 
-            <section id="salesIndex">Ventas</section>
+            <section id="contactIndex">
+                <div class="tsContact">
+                    <h1 class="blackTittle" >Contáctanos <span class="grayTittle">desde cualquier lugar</span></h1>
+                    <p>¿Tienes alguna pregunta o comentario? ¡Haznos saber! Nos encantaría escuchar de ti.</p>
+                    <img class="img-contact" src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" >
+                </div>
+                <form id="contactForm" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+        
+                    <input type="submit" value="Contactar">
+                </form>
+            </section>
+              
+            
+
+            <section id="salesIndex"></section>
+
+
 
             <section id="eventsIndex">
                 <div>
@@ -52,6 +86,7 @@
               
             
         </main>
+
 
 
         <footer></footer>

@@ -49,13 +49,3 @@ function showCurrentYear() {
     currentYearElements[i].appendChild(span);
   }
 }
-  
-
-
-
-
-
-  
-
-
-  
